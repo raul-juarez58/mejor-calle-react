@@ -1,0 +1,25 @@
+.like-btn {
+  display: flex;
+  align-items: center;
+  gap: 8px;
+
+  padding: 12px 20px;
+
+  border: none;
+  border-radius: 50px;
+
+  background: #111827;
+  color: white;
+
+  font-size: 1rem;
+  cursor: pointer;
+
+  transition: all 0.3s ease;
+}
+.like-btn:hover {
+  transform: translateY(-3px) scale(1.03);
+
+  background: #2563eb;
+
+  box-shadow: 0 10px 20px rgba(37,99,235,0.3);
+}

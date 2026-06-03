@@ -1,0 +1,32 @@
+.articulo {
+  background: white;
+  padding: 20px;
+  border-radius: 10px;
+  box-shadow: 0 4px 10px rgba(0,0,0,0.1);
+}
+
+.articulo img {
+ max-width: 100%;
+  border-radius: 10px;
+  margin-top: 10px;
+}
+
+.articulo h2 {
+  margin-bottom: 10px;
+}
+
+figure {
+  margin-top: 10px;
+  text-align: center;
+}
+
+figcaption {
+  font-size: 0.8rem;
+  color: gray;
+  margin-top: 5px;
+}
+figure img {
+ max-width: 100%;
+  max-width: 500px;
+  border-radius: 10px;
+}

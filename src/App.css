@@ -1,0 +1,24 @@
+
+.app {
+  display: flex;
+  flex-direction: column;
+  min-height: 100vh;
+}
+.main-contenido {
+  flex: 1;
+  display: flex;
+  gap: 20px;
+  padding: 20px;
+}
+.articulo {
+  flex: 1;
+}
+aside {
+  flex: 1;
+}
+
+@media (max-width: 768px) {
+  .main-contenido {
+    flex-direction: column;
+  }
+}

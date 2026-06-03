@@ -1,0 +1,44 @@
+img {
+    width: 300px;
+    height: auto;
+    margin-top: 10px;
+}
+
+.foto-grande {
+    height: 250;
+    object-fit: cover;
+}
+
+.foto-chica {
+    height: 220px;
+}
+figcaption {
+    font-size: 25px;
+    color: black;
+    margin: 5px 0px 20px 0px;
+}
+.pagina2 {
+    background-color:rgb(176, 214, 126); ;
+}
+
+.galeria {
+  display: flex;
+  gap: 120px;
+  justify-content: center;
+  flex-wrap: wrap;
+  padding: 20px;
+}
+.bloque {
+  width: 300px;
+  background: white;
+  padding: 15px;
+  border-radius: 12px;
+}
+.bloque figure {
+  margin-bottom: 20px;
+}
+.bloque img {
+  width: 100%;
+  border-radius: 12px;
+  display: block;
+}

@@ -1,0 +1,24 @@
+hr {
+    font-size: 3px solid blue;
+}
+header {
+  background: #2563eb;
+  color: white;
+  padding: 30px;
+  text-align: center;
+}
+.hero {
+  text-align: center;
+  padding: 60px 20px;
+}
+.hero h1 {
+  font-size: 3rem;
+  margin-bottom: 15px;
+}
+.hero-texto {
+  max-width: 700px;
+  margin: auto;
+  line-height: 1.7;
+  color: white;
+  font-size: 1.1rem;
+}
