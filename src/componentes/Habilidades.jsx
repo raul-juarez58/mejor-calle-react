@@ -1,11 +1,15 @@
 import "./Habilidades.css";
 
 function Habilidades() {
-  const skills = ["HTML", "CSS", "JavaScript", "React"];
+  const skills = ["HTML", "CSS", "JavaScript", "React", "Git", "GitHub", "Vercel"];
     
   return (
-    <section className="habil">
-      <h2>Creado con :</h2>
+    <section className="habilidades">
+      <h3>🛠️ Tecnologías utilizadas</h3>
+
+      <p className="skills-descripcion">
+    Este sitio fue desarrollado utilizando las siguientes tecnologías:
+  </p>
     
     <div className="skills-container">
       {skills.map((skill, index) => (
