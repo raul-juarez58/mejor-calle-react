@@ -17,4 +17,5 @@
 .like-btn.active {
   background: #2563eb;
   color: white;
+  transform: scale(1.05);
 }
