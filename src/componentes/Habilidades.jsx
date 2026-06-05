@@ -15,12 +15,12 @@ function Habilidades() {
    como asistente de aprendizaje y desarrollo, permitiendo explorar soluciones, mejorar el diseño y adquirir 
    nuevas habilidades durante el proceso.
 
-    
     <div className="skills-container">
       {skills.map((skill, index) => (
         <span key={index} className="skill">
           {skill}
         </span>
+
       ))}
     </div>
     </section>
