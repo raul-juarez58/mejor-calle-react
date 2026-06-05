@@ -11,9 +11,7 @@ function Habilidades() {
       <p className="skills-descripcion">
     Este sitio fue desarrollado utilizando las siguientes tecnologías:
   </p>
-  🤖 Además de las tecnologías utilizadas, este proyecto contó con el apoyo de herramientas de inteligencia artificial
-   como asistente de aprendizaje y desarrollo, permitiendo explorar soluciones, mejorar el diseño y adquirir 
-   nuevas habilidades durante el proceso.
+  
 
     <div className="skills-container">
       {skills.map((skill, index) => (
@@ -23,6 +21,11 @@ function Habilidades() {
 
       ))}
     </div>
+    <p className="ia-note">
+      🤖 Además de las tecnologías utilizadas, este proyecto contó con el apoyo de herramientas de inteligencia artificial
+   como asistente de aprendizaje y desarrollo, permitiendo explorar soluciones, mejorar el diseño y adquirir 
+   nuevas habilidades durante el proceso.
+    </p>
     </section>
   );
 }
