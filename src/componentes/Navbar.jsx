@@ -15,6 +15,10 @@ function Navbar() {
 <li>
   <Link to="/pagina3">🎥 Videos</Link>
 </li>
+
+<li>
+  <Link to="/contacto">📩 Contacto</Link>
+</li>
       </ul>
     </nav>
   );
