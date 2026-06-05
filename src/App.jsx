@@ -5,6 +5,7 @@ import Home from "./paginas/Home";
 import Pagina2 from "./paginas/Pagina2";
 import Pagina3 from "./paginas/Pagina3";
 import "./App.css";
+import Contacto from "./paginas/Contacto"
 
 
 function App() {
