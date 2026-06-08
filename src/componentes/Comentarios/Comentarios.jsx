@@ -1,4 +1,4 @@
-import { useState } from "react";
+import { useState,useEffect } from "react";
 import "./Comentarios.css";
 import { supabase } from "../../supabase/client";
 
@@ -33,6 +33,12 @@ function Comentarios() {
    cargarComentarios(); 
 };
 
+useEffect(() => {
+  cargarComentarios();
+}, []);
+
+
+
   return (
     <section className="comentarios">
       <h3>💬 Comentarios</h3>
@@ -46,6 +52,14 @@ function Comentarios() {
       <button onClick={enviarComentario}>
         📤 Enviar
       </button>
+
+      <div className="lista-comentarios">
+  {comentarios.map((item) => (
+    <p key={item.id}>
+      {item.texto}
+    </p>
+  ))}
+</div>
     </section>
   );
 }
