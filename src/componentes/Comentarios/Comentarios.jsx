@@ -14,6 +14,7 @@ function Comentarios() {
 
   if (!error) {
     setComentarios(data);
+    console.log(comentarios);
   }
 };
 
@@ -56,7 +57,11 @@ useEffect(() => {
       <div className="lista-comentarios">
   {comentarios.map((item) => (
     <div key={item.id} className="comentario-item">
-      {item.texto}
+      <p>{item.texto}</p>
+
+      <small>
+        {new Date(item.created_at).toLocaleDateString("es-AR")}
+      </small>
     </div>
   ))}
 </div>
