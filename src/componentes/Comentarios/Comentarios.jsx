@@ -55,9 +55,9 @@ useEffect(() => {
 
       <div className="lista-comentarios">
   {comentarios.map((item) => (
-    <p key={item.id}>
+    <div key={item.id} className="comentario-item">
       {item.texto}
-    </p>
+    </div>
   ))}
 </div>
     </section>

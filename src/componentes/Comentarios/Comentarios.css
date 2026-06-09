@@ -50,3 +50,14 @@
 
   transform: translateY(-2px);
 }
+
+.lista-comentarios {
+  margin-top: 20px;
+}
+
+.comentario-item {
+  background: #f5f5f5;
+  padding: 12px;
+  margin-bottom: 10px;
+  border-radius: 10px;
+}
