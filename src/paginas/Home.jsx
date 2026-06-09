@@ -3,7 +3,6 @@ import Articulo from "../componentes/Articulo";
 import Aside from "../componentes/Aside";
 import Habilidades from "../componentes/Habilidades";
 import Footer from "../componentes/Footer";
-import ProbandoSupa from "../componentes/ProbandoSupa";
 
 function Home() {
   return (
@@ -16,7 +15,6 @@ function Home() {
       </main>
 
         <Habilidades />
-        <ProbandoSupa />
 
     </>
   );
