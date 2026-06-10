@@ -19,6 +19,9 @@ function Comentarios() {
 };
 
   const enviarComentario = async () => {
+
+    if (!comentario.trim()) return;
+
     const { data, error } = await supabase
     .from("comentarios")
     .insert([
@@ -37,6 +40,20 @@ function Comentarios() {
 useEffect(() => {
   cargarComentarios();
 }, []);
+
+const eliminarComentario = async (id) => {
+
+    console.log("Eliminar:", id);
+
+      const { error } = await supabase  
+    .from("comentarios")
+    .delete()
+    .eq("id", id);
+
+    console.log(error);
+
+  cargarComentarios();
+};
 
 
 
@@ -59,9 +76,14 @@ useEffect(() => {
     <div key={item.id} className="comentario-item">
       <p>{item.texto}</p>
 
+      <button onClick={() => eliminarComentario(item.id)}>
+  🗑️ Eliminar
+</button>
+
       <small>
-        {new Date(item.created_at).toLocaleDateString("es-AR")}
+        {new Date(item.created_at).toLocaleString("es-AR")}
       </small>
+      
     </div>
   ))}
 </div>
